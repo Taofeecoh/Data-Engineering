@@ -159,7 +159,11 @@ def task_four(data: list):
     return f"Failed to run due bad entries: {ut.unique_list(bad_data)}"
 
 
+# ~~~~~~~~~~~~~~~~~~~~~~~ TASK FIVE ~~~~~~~~~~~~~~~~~~~~~~~
+
 def yield_bad_names(customer_names_list):
+    """ Function to yield bad names in a list """
+    
     for name in customer_names_list:
         if type(name) != str:
             yield name
