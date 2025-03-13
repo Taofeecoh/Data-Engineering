@@ -157,3 +157,9 @@ def task_four(data: list):
         if alpha_check(i):
             bad_data.append(i)
     return f"Failed to run due bad entries: {ut.unique_list(bad_data)}"
+
+
+def yield_bad_names(customer_names_list):
+    for name in customer_names_list:
+        if type(name) != str:
+            yield name
