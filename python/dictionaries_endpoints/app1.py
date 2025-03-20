@@ -15,7 +15,7 @@ manager_roles = []
 for job in jobs:
     if job["jobTitle"] and "Senior" in job["jobTitle"]:
         senior_roles.append(job["jobTitle"])
-    elif job["jobTitle"] and "Senior" not in job["jobTitle"]:
+    elif (job["jobTitle"]) and ("Senior" not in job["jobTitle"]) and ("Manager" in job["jobTitle"]) :
         manager_roles.append(job["jobTitle"])
 
 print(senior_roles)
